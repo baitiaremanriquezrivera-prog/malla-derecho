@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Derecho – UV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>⚖️ Malla Curricular Derecho</h1>
+<p>Universidad de Valparaíso – Plan 2016</p>
+
+<h2>Créditos aprobados: <span id="totalCreditos">0</span></h2>
+
+<section class="semestre">
+  <h3>1° Semestre</h3>
+
+  <label class="ramo">
+    <input type="checkbox" data-id="dere111" data-creditos="6">
+    <strong>DERE 111</strong> – Introducción al Derecho (6 créditos)
+  </label>
+
+  <label class="ramo">
+    <input type="checkbox" data-id="dere112" data-creditos="6">
+    <strong>DERE 112</strong> – Historia del Derecho (6 créditos)
+  </label>
+
+  <label class="ramo">
+    <input type="checkbox" data-id="dere113" data-creditos="6">
+    <strong>DERE 113</strong> – Derecho Romano (6 créditos)
+  </label>
+</section>
+
+<section class="semestre">
+  <h3>3° Semestre</h3>
+
+  <label class="ramo bloqueado">
+    <input type="checkbox"
+           data-id="dere212"
+           data-creditos="6"
+           data-requisitos="dere111">
+    <strong>DERE 212</strong> – Derecho Civil I: Personas (6 créditos)
+    <span class="req">Req: DERE 111</span>
+  </label>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
